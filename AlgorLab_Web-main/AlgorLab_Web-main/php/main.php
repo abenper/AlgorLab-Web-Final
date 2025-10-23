@@ -1,0 +1,62 @@
+<?php
+    //Usaremos pdo
+    //Conexion a la BBDD
+    function conexion(){
+        $pdo = new PDO('mysql:host=localhost;dbname=algorlab;','root','');
+        return $pdo;
+    }
+
+    function validarDatos($condicion,$cadena){
+        if (preg_match("/^".$condicion."$/",$cadena)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function limpiarCadenas($cadena){
+        $cadena=trim($cadena);
+        $cadena=stripslashes($cadena);
+        $cadena=str_ireplace("<script>","",$cadena);
+        $cadena=str_ireplace("</script>","",$cadena);
+        $cadena=str_ireplace("<script src","",$cadena);
+        $cadena=str_ireplace("<script type=","",$cadena);
+        $cadena=str_ireplace("SELECT * FROM","",$cadena);
+        $cadena=str_ireplace("DELETE FROM","",$cadena);
+        $cadena=str_ireplace("INSERT INTO","",$cadena);
+        $cadena=str_ireplace("DROP TABLE","",$cadena);
+        $cadena=str_ireplace("DROP DATABASE","",$cadena);
+        $cadena=str_ireplace("TRUNCATE TABLE","",$cadena);
+        $cadena=str_ireplace("SHOW TABLES","",$cadena);
+        $cadena=str_ireplace("SHOW DATABASES","",$cadena);
+        $cadena=str_ireplace("<?php","",$cadena);
+        $cadena=str_ireplace("?>","",$cadena);
+        $cadena=str_ireplace("--","",$cadena);
+        $cadena=str_ireplace("^","",$cadena);
+        $cadena=str_ireplace("<","",$cadena);
+        $cadena=str_ireplace("[","",$cadena);
+        $cadena=str_ireplace("]","",$cadena);
+        $cadena=str_ireplace("==","",$cadena);
+        $cadena=str_ireplace(";","",$cadena);
+        $cadena=str_ireplace("::","",$cadena);
+        $cadena=trim($cadena);
+		$cadena=stripslashes($cadena);
+        return $cadena;
+    }
+
+    //Funcion renombrar fotos
+	function renombrarFotos($nombre){
+		$nombre=str_ireplace(" ", "_", $nombre);
+		$nombre=str_ireplace("/", "_", $nombre);
+		$nombre=str_ireplace("#", "_", $nombre);
+		$nombre=str_ireplace("-", "_", $nombre);
+		$nombre=str_ireplace("$", "_", $nombre);
+		$nombre=str_ireplace(".", "_", $nombre);
+		$nombre=str_ireplace(",", "_", $nombre);
+		$nombre=$nombre."_".rand(0,100);
+		return $nombre;
+	}
+    //CRUD
+    //Insertar
+    //$pdo->query("INSERT INTO tipo(nombre) VALUES('Mujer')");
+?>
