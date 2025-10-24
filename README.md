@@ -15,12 +15,14 @@ Esta fue la **web final de primero** aplicando los conocimientos aprendidos en *
 
 ```
 AlgorLab_Web_Final/
-├── images/           # Capturas de pantalla de la web
 ├── css/              # Archivos de estilo
-├── js/               # Scripts de JavaScript
-├── index.php         # Página principal
-├── otros archivos PHP # Funcionalidades del backend
-└── README.md         # Este archivo
+├── entregas/         # Tareas entregadas de los alumnos
+├── img/              # Imagenes usadas en el proyecto
+├── inc/              # Includes de php
+├── js/               # Archivos js
+├── php/              # Otros archivos php
+├── view/             # Vistas php
+└── index.php         # Página principal
 ```
 
 ### 🖼️ Capturas de pantalla
@@ -28,19 +30,19 @@ AlgorLab_Web_Final/
 #### Página principal
 ![Página principal](images/1.png)
 
-#### Login
+#### Información
 ![Login](images/2.png)
 
-#### Gestión de alumnos
+#### Login
 ![Alumnos](images/3.png)
 
-#### Gestión de tareas
+#### Vista cursos
 ![Tareas](images/4.png)
 
 #### Entregas
 ![Entregas](images/5.png)
 
-#### Vista profesor
+#### Configuración Perfil
 ![Profesor](images/6.png)
 
 ### 🛠️ Tecnologías utilizadas
@@ -64,12 +66,14 @@ This was the **final website of the first year**, applying the knowledge learned
 
 ```
 AlgorLab_Web_Final/
-├── images/           # Website screenshots
-├── css/              # Stylesheets
-├── js/               # JavaScript scripts
-├── index.php         # Main page
-├── other PHP files   # Backend functionalities
-└── README.md         # This file
+├── css/              # Style files
+├── entregas/         # Students’ submitted assignments
+├── img/              # Images used in the project
+├── inc/              # PHP include files
+├── js/               # JavaScript files
+├── php/              # Other PHP files
+├── view/             # PHP views
+└── index.php         # Main page
 ```
 
 ### 🖼️ Screenshots
@@ -77,19 +81,19 @@ AlgorLab_Web_Final/
 #### Main page
 ![Main page](images/1.png)
 
-#### Login
+#### More information
 ![Login](images/2.png)
 
-#### Student Management
+#### Login
 ![Students](images/3.png)
 
-#### Task Management
+#### Course Management
 ![Tasks](images/4.png)
 
-#### Submissions
+#### Task Management
 ![Submissions](images/5.png)
 
-#### Teacher View
+#### Profile configuration
 ![Teacher](images/6.png)
 
 ### 🛠️ Technologies Used
