@@ -56,6 +56,12 @@ AlgorLab_Web_Final/
 
 ---
 
+## 📜 Licencia
+
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo [`LICENSE`](LICENSE) para más información.
+
+
+
 ## 🇬🇧 English
 
 [**This web needs Algorlab desktop app to run correctly**](https://github.com/abenper/AlgorLab-App-Final)
@@ -106,3 +112,9 @@ AlgorLab_Web_Final/
 - HTML5  
 - CSS3  
 - JavaScript
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
