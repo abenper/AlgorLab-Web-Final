@@ -54,13 +54,12 @@ AlgorLab_Web_Final/
 - CSS3  
 - JavaScript
 
----
 
 ## 📜 Licencia
 
 Este proyecto está bajo la licencia **MIT**. Consulta el archivo [`LICENSE`](LICENSE) para más información.
 
-
+---
 
 ## 🇬🇧 English
 
@@ -113,7 +112,6 @@ AlgorLab_Web_Final/
 - CSS3  
 - JavaScript
 
----
 
 ## 📜 License
 
