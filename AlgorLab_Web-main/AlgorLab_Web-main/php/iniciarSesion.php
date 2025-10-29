@@ -1,5 +1,4 @@
 <?php
-// php/iniciarSesion.php
 
 function iniciarSesion() {
     if (session_status() === PHP_SESSION_NONE) {
