@@ -1,5 +1,4 @@
 <?php
-// ./php/subirEntrega.php
 
 function subirTarea()
 {
