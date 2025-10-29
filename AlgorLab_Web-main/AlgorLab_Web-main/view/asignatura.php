@@ -1,9 +1,7 @@
 <?php
-// ./view/asignatura.php
-
 include_once './inc/session_start.php';
 include_once './php/obtenerCurso.php';
-include_once './php/subirEntrega.php'; // Incluimos la función
+include_once './php/subirEntrega.php';
 
 if (!isset($_SESSION['usuario_id'])) {
   header('Location: index.php?vista=login');
@@ -12,7 +10,7 @@ if (!isset($_SESSION['usuario_id'])) {
 
 // Ejecutamos subirTarea() solo si el formulario fue enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['archivo']) && isset($_POST['tarea_id'])) {
-  subirTarea(); // Se ejecuta la función de subida
+  subirTarea();
 }
 
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
