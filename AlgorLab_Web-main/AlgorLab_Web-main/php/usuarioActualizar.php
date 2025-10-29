@@ -1,5 +1,5 @@
 <?php
-include_once 'main.php';  // limpiarCadenas(), validarDatos(), conexion()
+include_once 'main.php';
 
 function actualizarUsuario($post, $userId) {
     $db = conexion();
