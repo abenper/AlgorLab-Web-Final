@@ -1,7 +1,7 @@
 <?php
 
 // Recoger el parámetro 'curso' de la URL
-$curso = $_GET['curso'] ?? 'java'; // Por defecto java si no hay parámetro
+$curso = $_GET['curso'] ?? 'java';
 
 // Definimos los datos de cada curso en un array asociativo
 $cursos = [
@@ -61,7 +61,6 @@ $data = $cursos[$curso];
 
 <section class="container py-5">
 
-    <!-- Botón para volver a cursos -->
     <div class="mb-4">
         <a href="index.php?vista=cursos" class="btn btn-outline-primary">
             Volver a cursos
